@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication3</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/home.css" asp-append-version="true" />
+
+</head>
+<body>
+   <div id="header-top">
+       <div class="logo">Мир Путешествий</div>
+       <div class="button-header">
+           <button class="button"> Войти</button>
+        </div>
+   </div>
+   <img class="img-header" src="~/img/2.jfif" />
+   
+    <div id=" header-buttom">
+        <div class="menu">
+            <ul>
+                <li><a href ="#home">Главная</a></li>
+                <li><a href ="#contact">Контакты</a></li>
+                <li><a href="#countries">Страны</a></li>
+                <li><a href="#services">Услуги</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        @RenderBody()
+    </div>
+	<script src="~/js/shared_script.js" asp-append-version="true"></script>
+    <script src="~/js/home_script.js" asp-append-version="true"></script>
+</body>
+</html>
