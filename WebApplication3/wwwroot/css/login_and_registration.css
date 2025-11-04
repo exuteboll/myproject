@@ -1,0 +1,188 @@
+﻿.container-login-registration {
+    display: none;
+    width: 100vw; /* точно вся ширина viewport */
+    height: 100vh; /* точно вся высота viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,.5);
+    z-index: 1000;
+}
+
+.block-container {
+    width: 600px;
+    height: 400px;
+    padding: 20px 0;
+    z-index: 901;
+    position: relative;
+}
+
+.block {
+    height: 100%;
+    background-color: rgb(255, 165, 0);
+    box-shadow: 0.5px 45px rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    transition: 0.5s;
+}
+
+    .block.active {
+        background-color: #379b6b;
+    }
+
+.block-item {
+    width: 50%;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 900;
+}
+
+.block-item {
+    text-align: center;
+}
+
+.block-item_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.block-item_btn {
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.form-box {
+    background-color: #fff;
+    height: 70%; /* еще меньше */
+    width: 50%;
+    box-shadow: 0 5px 45px rgba(0,0,0,0.25);
+    position: absolute;
+    top: 15%; /* больше отступ сверху */
+    left: 0;
+    z-index: 902;
+    transition: 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .form-box.active {
+        left: 50%;
+        top: 15%;
+    }
+
+.form_title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: -5px; /* поднимает заголовок выше */
+}
+
+.form-box label {
+    position: relative;
+    display: block; /* важно - делает вертикально */
+    margin-bottom: 20px;
+    width: 80%; 
+}
+
+.form-box input {
+    outline: none;
+    width: 100%; /* занимает всю ширину родителя */
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: block; /* делает вертикально */
+}
+
+    .form-box input:focus {
+        border-color: rgb(255, 165, 0);
+    }
+.form-box span {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: rgb(131, 131, 131);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+    background-color: transparent;
+}
+
+.form-box input:focus + span,
+.form-box input:not(:placeholder-shown) + span { /* Исправлен селектор */
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    color: rgb(255, 165, 0);
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+span {
+    cursor: text;
+    position: absolute;
+    top: 3%;
+    left: 16px;
+    color: rgb(131, 131, 131);
+    transition: all 0.3s ease-in-out;
+    padding: 0 4px;
+}
+
+.form-btn {
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 165, 0);
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: inherit;
+    width: fit-content;
+}
+
+.form_btn_signup {
+    background-color: #370b0b;
+}
+
+.form {
+    width: 100%;
+    padding: 50px;
+    font-size: 16px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.form_signin {
+    left: 0;
+    transition: 0.25s;
+}
+
+.form_signup {
+    left: 100%;
+    transition: 0s;
+}
+
+.form-box.active .form_signin {
+    left: -100%;
+    transition: 0s;
+}
+
+.form-box.active .form_signup {
+    left: 0;
+    transition: 0.25s;
+}

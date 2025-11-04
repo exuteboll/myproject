@@ -3,7 +3,9 @@ wwwroot\favicon.ico
 wwwroot\img\1.jfif
 wwwroot\img\2.jfif
 wwwroot\img\bed.jfif
+wwwroot\img\contact.jfif
 wwwroot\img\Designer.jfif
+wwwroot\img\got_omagaze.jpg
 wwwroot\img\icon-address.png
 wwwroot\img\icon-email.png
 wwwroot\img\icon-phone.png
@@ -13,6 +15,8 @@ wwwroot\img\office.jfif
 wwwroot\img\sofa.jfif
 wwwroot\img\table.jfif
 wwwroot\img\wardrobe.jfif
+wwwroot\js\login_and_registration_script.js
+wwwroot\js\shared_script.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
@@ -70,4 +74,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\js\shared_script.js
+wwwroot\css\login_and_registration.css

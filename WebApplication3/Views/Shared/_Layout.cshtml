@@ -6,32 +6,37 @@
     <title>@ViewData["Title"] - WebApplication3</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true" />
 
 </head>
 <body>
    <div id="header-top">
+
        <div class="logo">Демидов</div>
-       <div class="button-header">
-           <button class="button"> Войти</button>
+
+        <div id="header-bottom">
+            <div class="menu">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Главная</a></li>
+                    <li><a href="@Url.Action("Contacts", "Home")">Контакты</a></li>
+                    <li><a href="@Url.Action("SiteInformation", "Home")">Услуги</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="button-header">
+            <button class="button" id="click-to-hide">Войти</button> <!-- Добавлен id -->
+        </div>
+        @await Html.PartialAsync("_LoginRegistrationPartial")
    </div>
-   <img class="img-header" src="./img/mebel.jfif" />
+    <img class="img-header" src="@ViewBag.HeaderImage" />
+
    
-    <div id=" header-buttom">
-        <div class="menu">
-            <ul>
-                <li><a href ="#home">Главная</a></li>
-                <li><a href ="#contact">Контакты</a></li>
-                <li><a href="#countries">Страны</a></li>
-                <li><a href="#services">Услуги</a></li>
-            </ul>
-        </div>
-    </div>
+    
     <div class="container">
         @RenderBody()
     </div>
 	<script src="~/js/shared_script.js" asp-append-version="true"></script>
-    <script src="~/js/home_script.js" asp-append-version="true"></script>
+    <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
+
 </body>
 </html>

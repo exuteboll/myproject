@@ -3,8 +3,9 @@
     "",
     "\\Controllers",
     "\\wwwroot",
+    "\\wwwroot\\css",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\wwwroot\\js\\shared_script.js",
+  "SelectedNode": "\\wwwroot\\css\\shared.css",
   "PreviewInSolutionExplorer": false
 }

@@ -79,13 +79,11 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center,
+    align-items: center;
 }
 
 /*Стили для лого*/
 .logo {
-    align-items: center;
-    display: inline-flex;
     font-size: 15px;
     font-weight: 600;
     line-height: 150%;
@@ -96,7 +94,7 @@ body {
     width: 80%;
     height: 350px;
     margin-top: 20px;
-    margin-left: 200px;
+    margin-left: 20px;
 }
 
 #header-top {
@@ -106,23 +104,30 @@ body {
     z-index: 500;
     background-color: orange;
     display: flex;
-    justify-content: space-between;
-    padding: 25px 70px;
-    transition: background-color 0.3s ease; /*было 05, + добавил ease*/
+    justify-content: space-between; /* равномерное распределение */
+    align-items: center; /* выравнивание по центру по вертикали */
+    padding: 15px 70px; /* уменьшил padding для компактности */
+    transition: background-color 0.3s ease;
 }
 /*стили для нижней шапки(меню)*/
 #header-bottom {
-    position: sticky;
-    top: 0;
-    padding: 25px,0;
-    width: 50%;
-    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1; /* занимает доступное пространство */
 }
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 /*Стили для кнопок в шапке*/
 .button-header {
     display: flex;
-    align-content: center;
+    align-items: center;
 }
 
 
@@ -151,21 +156,22 @@ body {
 }
 
 .menu li {
-    display: inline;
+    
     padding: 0 20px;
 }
 
-.menu a {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: 150%;
-    color: #0c0e10;
-    text-decoration: none;
-}
-
-    .menu a:hover {
-        color: #000;
+    .menu a {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 150%;
+        color: #0c0e10;
+        text-decoration: none;
+        transition: color 0.3s ease;
     }
+
+        .menu a:hover {
+            color: #fff;
+        }
 
 .container {
     width: 82%;
