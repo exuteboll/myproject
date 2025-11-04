@@ -1,14 +1,29 @@
-﻿document.addEventListener('DOMContentLoaded', function () {
+﻿/*document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         var heade = document.getElementById('header-top')
         var scrollTop = window.ScrollY;
         var maxScroll = 250;
 
         var opacity = Math.min(scrollTop / maxScroll, 1);
-        header.style.backgroundColor = `rgba(255, 165, 0, ${opacity})`;
+        header.style.backgroundColor = `rgba(0, 0, 139, ${opacity})`;
     });
 });
+*/
+document.addEventListener('DOMContentLoaded', function () {
+    window.addEventListener('scroll', function () {
+        var header = document.getElementById('header-top');
+        var scrollTop = window.scrollY;
+        var maxScroll = 250;
 
+        if (scrollTop > maxScroll) {
+            /* header.style.backgroundColor = 'orange'; */
+            header.style.backgroundColor = 'transparent';
+        } else {
+            /* header.style.backgroundColor = 'transparent'; */
+            header.style.backgroundColor = 'orange';
+        }
+    });
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     let currentSlide = 0;

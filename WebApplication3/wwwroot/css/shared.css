@@ -1,25 +1,88 @@
-﻿html {
+﻿
+.card-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.card-wrapper {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    min-width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: rgba(255,165,3,1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
+}
+
+    .card img {
+        width: 100%;
+        height: 260px;
+    }
+
+    .card h3 {
+        text-align: center;
+        padding: 10px;
+        font-size: 18px;
+        background: #fff;
+    }
+
+    .card p {
+        padding: 20px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600
+    }
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 50;
+}
+
+    .arrow.left {
+        left: 0;
+    }
+
+    .arrow.right {
+        right: 0;
+    }
+
+html {
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
 
 *,
-::before,
+*::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
 
-
+/* основные стили для боди */
 body {
     height: 10000px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center,
 }
 
+/*Стили для лого*/
 .logo {
     align-items: center;
     display: inline-flex;
@@ -28,12 +91,12 @@ body {
     line-height: 150%;
     color: #0c0e10;
 }
-
-
+/*стиль изображения в шапке*/
 .img-header {
-    width: 850px;
+    width: 80%;
     height: 350px;
     margin-top: 20px;
+    margin-left: 200px;
 }
 
 #header-top {
@@ -41,32 +104,33 @@ body {
     top: 0;
     width: 100%;
     z-index: 500;
-    background-color: rgba(255, 165, 0, 0);
+    background-color: orange;
     display: flex;
     justify-content: space-between;
     padding: 25px 70px;
-    transition: background-color 0.5s;
+    transition: background-color 0.3s ease; /*было 05, + добавил ease*/
 }
-
+/*стили для нижней шапки(меню)*/
 #header-bottom {
     position: sticky;
     top: 0;
-    padding: 25px 0;
+    padding: 25px,0;
     width: 50%;
     z-index: 1000;
 }
 
-
+/*Стили для кнопок в шапке*/
 .button-header {
     display: flex;
-    align-items: center;
+    align-content: center;
 }
+
 
     .button-header .button {
         border: 2px solid #370b0b;
         background-color: transparent;
         padding: 7px 14px;
-        margin: 0 10px;
+        margin: 0px 10px;
         border-radius: 3px;
         color: #370b0b;
         cursor: pointer;
@@ -79,33 +143,93 @@ body {
             color: #fff;
             background-color: #370b0b;
         }
-
+/*для внутренней нижний шапки */
 .menu {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-    .menu li {
-        display: inline;
-        padding: 0 20px;
-    }
-
-    .menu a {
-        font-size: 15px;
-        font-weight: 600;
-        line-height: 150%;
-        color: #0c0e10;
-        text-decoration: none;
-    }
-
--menu a:hover {
-    color: #000;
+.menu li {
+    display: inline;
+    padding: 0 20px;
 }
+
+.menu a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #0c0e10;
+    text-decoration: none;
+}
+
+    .menu a:hover {
+        color: #000;
+    }
 
 .container {
     width: 82%;
     border: 2px solid #cacaca;
     border-radius: 3px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0, 4);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.4);
 }
+
+.container-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    margin: 40px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #370b0b;
+}
+
+.text {
+    text-indent: 40px;
+    margin: 5px;
+    text-align: justify;
+    font-size: 20px;
+    color: #370b0b;
+}
+
+.container-row {
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px;
+}
+
+.row-item {
+    width: 30%;
+    background: #fff;
+    margin: 25px 0px;
+}
+
+    .row-item h2 {
+        font-weight: 400;
+        font-size: 26px;
+        margin: 8px 0;
+    }
+
+.item-img {
+    width: 90px;
+    opacity: 0.75;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 250ms ease;
+}
+
+    .item-img:hover {
+        background: rgba(255,165,3,1);
+        margin: 5px;
+        width: 100px;
+    }
+

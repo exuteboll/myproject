@@ -1,2 +1,0 @@
-C:\Users\exute\source\repos\WebApplication3\wwwroot\js\home_script.js
-C:\Users\exute\source\repos\WebApplication3\wwwroot\js\site.js
