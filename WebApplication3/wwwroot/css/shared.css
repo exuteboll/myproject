@@ -88,6 +88,7 @@ body {
     font-weight: 600;
     line-height: 150%;
     color: #0c0e10;
+    transition: all 0.5s ease;
 }
 /*стиль изображения в шапке*/
 .img-header {
@@ -116,6 +117,9 @@ body {
     flex-grow: 1; /* занимает доступное пространство */
 }
 
+
+
+
 .menu ul {
     display: flex;
     list-style: none;
@@ -128,6 +132,28 @@ body {
 .button-header {
     display: flex;
     align-items: center;
+    transition: all 0.3s ease;
+}
+    .button-header.hidden-button {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(20px);
+    }
+    .button-header.hidden-element {
+        transform: translateX(20px);
+    }
+.menu.hidden-element {
+    transform: translateY(-10px);
+}
+.logo.hidden-element {
+    transform: translateX(-20px);
+}
+/* Стили для полного скрытия элементов */
+
+.hidden-element {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important; /* отключает кликабельность */
 }
 
 
@@ -153,6 +179,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
+    transition: all 0.4s ease;
 }
 
 .menu li {

@@ -12,15 +12,29 @@
 document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', function () {
         var header = document.getElementById('header-top');
+        var buttonHeader = document.querySelector('.button-header');
+        var menu = document.querySelector('.menu');
+        var logo = document.querySelector('.logo');
         var scrollTop = window.scrollY;
         var maxScroll = 250;
 
         if (scrollTop > maxScroll) {
             /* header.style.backgroundColor = 'orange'; */
-            header.style.backgroundColor = 'orange';
-        } else {
-            /* header.style.backgroundColor = 'transparent'; */
             header.style.backgroundColor = 'transparent';
+            if (buttonHeader) if (buttonHeader) buttonHeader.classList.add('hidden-element');
+            if (menu) menu.classList.add('hidden-element');
+            if (logo) logo.classList.add('hidden-element');
+        }
+        
+        else {
+            /* header.style.backgroundColor = 'transparent'; */
+                header.style.backgroundColor = 'orange';
+                if (buttonHeader) {
+                    buttonHeader.classList.remove('hidden-button');
+                    if (buttonHeader) buttonHeader.classList.remove('hidden-element');
+                    if (menu) menu.classList.remove('hidden-element');
+                    if (logo) logo.classList.remove('hidden-element');
+                }
         }
     });
 });
