@@ -38,5 +38,29 @@
 	<script src="~/js/shared_script.js" asp-append-version="true"></script>
     <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
 
+    <footer>
+        <div class="footer-left">
+            <div class="logo">Демидов</div>
+            <p>
+                Мы — мебельный магазин, который помогает создавать уютные и стильные интерьеры.
+                Предлагаем широкий выбор мебели для дома и офиса. Мы заботимся о каждом клиенте,
+                предоставляя индивидуальные консультации и лучший сервис.
+            </p>
+            <div class="footer-demidov">
+                &copy; 2025 - Демидов - Мебельный магазин
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <div class="menu">
+                <ul>
+                    <li><a href="@Url.Action("Index", "Home")">Главная</a></li>
+                    <li><a href="@Url.Action("Contacts", "Home")">Контакты</a></li>
+                    <li><a href="@Url.Action("SiteInformation", "Home")">Услуги</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

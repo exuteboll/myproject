@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\myproject\\WebApplication3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\css\\shared.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\css\\shared.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\js\\shared_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\js\\shared_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\home\\contacts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,44 +19,36 @@
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\css\\login_and_registration.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\home\\siteinformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\home\\siteinformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\css\\shared.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\css\\shared.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\shared\\_loginregistrationpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\js\\shared_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\js\\shared_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\home\\siteinformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\home\\siteinformation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:wwwroot\\js\\login_and_registration_script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,20 +66,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Contacts.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Home\\Contacts.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Contacts.cshtml",
               "ToolTip": "C:\\myproject\\WebApplication3\\Views\\Home\\Contacts.cshtml",
               "RelativeToolTip": "Views\\Home\\Contacts.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-04T17:41:18.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -87,12 +87,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-04T17:40:38.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T17:40:38.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
@@ -100,62 +99,63 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-11-04T16:16:39.428Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-04T16:16:39.428Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "login_and_registration_script.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\login_and_registration_script.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\login_and_registration_script.js",
               "ToolTip": "C:\\myproject\\WebApplication3\\wwwroot\\js\\login_and_registration_script.js",
               "RelativeToolTip": "wwwroot\\js\\login_and_registration_script.js",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwCgAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-04T15:47:24.269Z"
+              "WhenOpened": "2025-11-04T15:47:24.269Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "login_and_registration.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\login_and_registration.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\login_and_registration.css",
               "ToolTip": "C:\\myproject\\WebApplication3\\wwwroot\\css\\login_and_registration.css",
               "RelativeToolTip": "wwwroot\\css\\login_and_registration.css",
-              "ViewState": "AgIAAC0AAAAAAAAAAAD4v0UAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-04T15:33:19.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "_LoginRegistrationPartial.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
               "ToolTip": "C:\\myproject\\WebApplication3\\Views\\Shared\\_LoginRegistrationPartial.cshtml",
               "RelativeToolTip": "Views\\Shared\\_LoginRegistrationPartial.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-04T15:28:47.022Z"
+              "WhenOpened": "2025-11-04T15:28:47.022Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 0,
               "Title": "shared.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\shared.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\shared.css",
               "ToolTip": "C:\\myproject\\WebApplication3\\wwwroot\\css\\shared.css",
               "RelativeToolTip": "wwwroot\\css\\shared.css",
-              "ViewState": "AgIAAEcAAAAAAAAAAAD4v1YAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAD4v2gAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-11-03T13:47:51.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -163,8 +163,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T10:36:12.67Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T10:36:12.67Z"
             },
             {
               "$type": "Document",
@@ -181,28 +180,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "SiteInformation.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Home\\SiteInformation.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\SiteInformation.cshtml",
               "ToolTip": "C:\\myproject\\WebApplication3\\Views\\Home\\SiteInformation.cshtml",
               "RelativeToolTip": "Views\\Home\\SiteInformation.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-03T09:45:36.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "shared_script.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\shared_script.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\shared_script.js",
               "ToolTip": "C:\\myproject\\WebApplication3\\wwwroot\\js\\shared_script.js",
               "RelativeToolTip": "wwwroot\\js\\shared_script.js",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwDMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAkwBYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-11-03T09:31:10.911Z"
+              "WhenOpened": "2025-11-03T09:31:10.911Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -212,7 +212,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\myproject\\WebApplication3\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-03T08:38:59.522Z",
               "EditorCaption": ""

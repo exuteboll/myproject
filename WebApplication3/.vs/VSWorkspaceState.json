@@ -2,10 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
+    "\\Views",
+    "\\Views\\Home",
     "\\wwwroot",
     "\\wwwroot\\css",
     "\\wwwroot\\js"
   ],
-  "SelectedNode": "\\wwwroot\\css\\shared.css",
+  "SelectedNode": "\\WebApplication3.sln",
   "PreviewInSolutionExplorer": false
 }

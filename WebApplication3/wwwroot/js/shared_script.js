@@ -17,10 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (scrollTop > maxScroll) {
             /* header.style.backgroundColor = 'orange'; */
-            header.style.backgroundColor = 'transparent';
+            header.style.backgroundColor = 'orange';
         } else {
             /* header.style.backgroundColor = 'transparent'; */
-            header.style.backgroundColor = 'orange';
+            header.style.backgroundColor = 'transparent';
         }
     });
 });
