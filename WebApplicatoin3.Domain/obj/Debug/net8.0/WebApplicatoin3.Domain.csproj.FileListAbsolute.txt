@@ -1,0 +1,12 @@
+C:\myproject\WebApplicatoin3.Domain\bin\Debug\net8.0\WebApplicatoin3.Domain.deps.json
+C:\myproject\WebApplicatoin3.Domain\bin\Debug\net8.0\WebApplicatoin3.Domain.dll
+C:\myproject\WebApplicatoin3.Domain\bin\Debug\net8.0\WebApplicatoin3.Domain.pdb
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.AssemblyInfoInputs.cache
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.AssemblyInfo.cs
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.csproj.CoreCompileInputs.cache
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.sourcelink.json
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.dll
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\refint\WebApplicatoin3.Domain.dll
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\WebApplicatoin3.Domain.pdb
+C:\myproject\WebApplicatoin3.Domain\obj\Debug\net8.0\ref\WebApplicatoin3.Domain.dll

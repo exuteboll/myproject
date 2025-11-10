@@ -7,14 +7,30 @@
   "targets": {
     ".NETCoreApp,Version=v8.0": {
       "WebApplication3/1.0.0": {
+        "dependencies": {
+          "WebApplicatoin3.Domain": "1.0.0"
+        },
         "runtime": {
           "WebApplication3.dll": {}
+        }
+      },
+      "WebApplicatoin3.Domain/1.0.0": {
+        "runtime": {
+          "WebApplicatoin3.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "WebApplication3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WebApplicatoin3.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

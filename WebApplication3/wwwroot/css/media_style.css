@@ -1,0 +1,256 @@
+﻿@media (max-width: 992px) {
+    .button-header {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .img-header {
+        width: 430px;
+        height: 200px;
+        margin-top: 40px;
+    }
+
+    #header-top {
+        padding: 7px 5px;
+    }
+
+    #header-bottom {
+        padding: 0px;
+    }
+
+    .icon {
+        display: flex;
+        margin: auto 0;
+        color: #370b0b;
+        padding: 5px 10px;
+        cursor: pointer;
+        border: 1px solid #370b0b;
+        border-radius: 4px;
+        font-size: 20px;
+    }
+
+    .side-menu.active {
+        right: 0;
+    }
+
+    .container {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    /* Скрытие кнопки заголовка */
+    .button-header {
+        display: none;
+    }
+
+    /* Стили для информационных секций */
+    .info-sections {
+        font-size: 34px;
+    }
+
+    /* Стили для секций контейнера */
+    .container-section {
+        margin: 27px 10px;
+    }
+
+    /* Стили для текстовых элементов */
+    .text {
+        margin: 9px;
+        font-size: 18px;
+    }
+
+    /* Стили для карточек */
+    .card p {
+        display: block; /* или просто удалите это правило */
+        font-size: 12px; /* Можно сделать текст меньше на мобильных */
+        padding: 10px;
+    }
+
+    .card img {
+        height: 186px;
+    }
+
+    /* Стили для элементов ингредиентов */
+    .item-ing {
+        width: 53px;
+        margin: 9px;
+    }
+
+    /* Стили для элементов строк */
+    .row-item h2 {
+        font-size: 18px;
+    }
+
+    .row-item p {
+        font-size: 13px;
+    }
+
+    /* Стили для блока сообщений */
+    .block-message {
+        width: 100%;
+    }
+
+    /* Стили для подвала */
+    footer {
+        padding: 69px 10px;
+        margin-top: 80px;
+        display: grid;
+    }
+
+        footer .footer-left {
+            width: 100%;
+            gap: 20px;
+        }
+
+    /* Стили для контейнера блоков */
+    .block-container {
+        width: 400px;
+        height: 650px;
+        padding: 0;
+    }
+
+    /* Общие стили блоков */
+    .block {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    /* Стили для формы */
+    .form-box {
+        width: 100%;
+        height: 500px;
+        box-shadow: none;
+        top: 0;
+    }
+
+        .form-box.active {
+            top: 150px;
+            left: 0;
+        }
+
+    .side-menu {
+        width: 280px;
+    }
+
+        .side-menu a {
+            font-size: 16px;
+        }
+
+        .side-menu .button {
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+
+    .container-login-registration {
+        padding: 20px;
+    }
+
+    .block-container {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        min-height: 500px;
+        padding: 0;
+    }
+
+    .block {
+        flex-direction: column;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .block-item {
+        width: 100%;
+        padding: 20px;
+    }
+
+        .block-item:first-child {
+            padding-bottom: 10px;
+        }
+
+        .block-item:last-child {
+            padding-top: 10px;
+        }
+
+    .form-box {
+        position: relative;
+        width: 100%;
+        height: 400px;
+        top: 0;
+        left: 0;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+        margin-top: 20px;
+    }
+
+        .form-box.active {
+            left: 0;
+            top: 0;
+            margin-top: 20px;
+        }
+
+    .form {
+        padding: 30px 25px;
+        width: 100%;
+    }
+
+    .form_title {
+        font-size: 1.3rem;
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    .form-box label {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-box input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .form-box span {
+        left: 12px;
+        font-size: 14px;
+    }
+
+    .form-box input:focus + span,
+    .form-box input:not(:placeholder-shown) + span {
+        top: -8px;
+        left: 8px;
+        font-size: 11px;
+    }
+
+    .form-btn, .form_btn_signup {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .block-item_title {
+        font-size: 1.1rem;
+        margin-bottom: 8px;
+    }
+
+    .block-item_btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Убедимся, что overlay покрывает весь экран */
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+ 
+}

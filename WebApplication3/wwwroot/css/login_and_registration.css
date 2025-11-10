@@ -8,12 +8,15 @@
     justify-content: center;
     align-items: center;
     background: rgba(0,0,0,.5);
+    padding:20px;
     z-index: 1000;
 }
 
 .block-container {
     width: 600px;
+    max-width: 90vw; /* Ограничиваем максимальную ширину */
     height: 400px;
+    max-height: 90vh; /* Ограничиваем максимальную высоту */
     padding: 20px 0;
     z-index: 901;
     position: relative;
@@ -26,6 +29,8 @@
     display: flex;
     align-items: center;
     transition: 0.5s;
+    border-radius: 8px; /* Добавляем скругление */
+    overflow: hidden; /* Скрываем переполнение */
 }
 
     .block.active {
@@ -77,6 +82,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    border-radius: 8px; /* Добавляем скругление */
 }
 
     .form-box.active {
@@ -185,4 +191,40 @@ span {
 .form-box.active .form_signup {
     left: 0;
     transition: 0.25s;
+}
+
+#error-messages-singin {
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+}
+
+/* Кнопка закрытия для мобильных */
+.close-button-mobile {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    z-index: 9999; /* Увеличьте z-index */
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border: none;
+    font-weight: bold;
+}
+
+@media (max-width: 992px) {
+    .close-button-mobile {
+        display: block;
+    }
 }

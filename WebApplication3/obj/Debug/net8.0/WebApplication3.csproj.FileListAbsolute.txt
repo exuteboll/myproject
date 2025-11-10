@@ -65,3 +65,7 @@ C:\myproject\WebApplication3\obj\Debug\net8.0\refint\WebApplication3.dll
 C:\myproject\WebApplication3\obj\Debug\net8.0\WebApplication3.pdb
 C:\myproject\WebApplication3\obj\Debug\net8.0\WebApplication3.genruntimeconfig.cache
 C:\myproject\WebApplication3\obj\Debug\net8.0\ref\WebApplication3.dll
+C:\myproject\WebApplication3\obj\Debug\net8.0\WebApplication3.csproj.AssemblyReference.cache
+C:\myproject\WebApplication3\bin\Debug\net8.0\WebApplicatoin3.Domain.dll
+C:\myproject\WebApplication3\bin\Debug\net8.0\WebApplicatoin3.Domain.pdb
+C:\myproject\WebApplication3\obj\Debug\net8.0\WebAppli.18867FDF.Up2Date

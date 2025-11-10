@@ -1,5 +1,7 @@
 ﻿<div class="container-login-registration">
+    <div class="overlay" id="modal-overlay"></div>
     <div class="block-container">
+        <div class="close-button-mobile" id="close-modal-btn">×</div>
         <div class="block">
             <section class="block_item block-item">
                 <h2 class="block-item_title">У вас уже есть аккаунт?</h2>
@@ -16,35 +18,37 @@
         <form class="form form_signin">
             <h3 class="form_title">Вход</h3>
             <label>
-                <input type="text" placeholder=" " />
+                <input type="text" placeholder=" " id="signin_email"/>
                 <span>Почта</span>
             </label>
             <label>
-                <input type="password" placeholder=" " />
+                <input type="password" placeholder=" " id="signin_password" />
                 <span>Пароль</span>
             </label>
             <div class="form-btn">Войти</div>
+            <div id="error-messages-singin"></div>
         </form>
 
         <form class="form form_signup">
             <h3 class="form_title">Регистрация</h3>
             <label>
-                <input type="text" placeholder=" " />
+                <input type="text" placeholder=" " id="signup_login" />
                 <span>Логин</span>
             </label>
             <label>
-                <input type="text" placeholder=" " />
+                <input type="text" placeholder=" " id="signup_email"/>
                 <span>Почта</span>
             </label>
             <label>
-                <input type="password" placeholder=" " />
+                <input type="password" placeholder=" " id="signup_password" />
                 <span>Пароль</span>
             </label>
             <label>
-                <input type="password" placeholder=" " />
+				<input type="password" placeholder=" " id="signup_confirm_password"/>          
                 <span>Подтвердите пароль</span>
             </label>
             <div class="form-btn form_btn_signup">Зарегистрироваться</div>
+			<div id="error-messages-singup"></div>   <!-- Тут еще мб не правильно возможно сигнин --> 
         </form>
     </div>
 

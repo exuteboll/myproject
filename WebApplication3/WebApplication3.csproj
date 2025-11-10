@@ -10,4 +10,8 @@
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplicatoin3.Domain\WebApplicatoin3.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

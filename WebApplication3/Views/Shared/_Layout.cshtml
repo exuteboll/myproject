@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/media_style.css" asp-append-version="true" />
 
 </head>
 <body>
    <div id="header-top">
-
+        
        <div class="logo">Демидов</div>
-
         <div id="header-bottom">
             <div class="menu">
                 <ul>
@@ -27,10 +27,24 @@
             <button class="button" id="click-to-hide">Войти</button> <!-- Добавлен id -->
         </div>
         @await Html.PartialAsync("_LoginRegistrationPartial")
+        <div id="hamburger" class="icon">&#9776;</div>
    </div>
     <img class="img-header" src="@ViewBag.HeaderImage" />
 
-   
+
+    <div id="side-menu-overlay" class="side-menu-overlay"></div>
+     <div id="side-menu" class="side-menu">
+       
+        <div>
+            <ul>
+               <li><a href="@Url.Action("Index","Home")">Главная</a></li>
+               <li><a href="@Url.Action("Contacts", "Home")">Контакты</a></li>
+               <li><a href="@Url.Action("SiteInformation", "Home")">Услуги</a></li>
+            </ul>
+         
+        </div>
+        <button class="button" id="side-menu-button-click-to-hide" type="button">Войти</button>
+     </div>
     
     <div class="container">
         @RenderBody()
