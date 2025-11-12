@@ -28,11 +28,12 @@
     if (overlay) {
         overlay.addEventListener("click", toggleModal);
     }
+    /*
     const closeButton = document.getElementById("close-modal-btn");
     if (closeButton) {
         closeButton.addEventListener("click", toggleModal);
         console.log("Кнопка закрытия найдена и обработана");
-    }
+    } */
 
     // Логика переключения между формами
     const signInBtn = document.querySelector('.signin-btn');
@@ -153,14 +154,14 @@
         });
     }
 
-    document.addEventListener('keydown', function (event) {
+    /*document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
             const modal = document.querySelector(".container-login-registration");
             if (modal && modal.style.display === "flex") {
                 toggleModal();
             }
         }
-    });
+    }); */
 
     /*Для мобилок */
     document.addEventListener('DOMContentLoaded', function () {
