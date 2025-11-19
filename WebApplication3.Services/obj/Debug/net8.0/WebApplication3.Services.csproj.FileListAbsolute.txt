@@ -11,3 +11,8 @@ C:\myproject\WebApplication3.Services\obj\Debug\net8.0\WebApplication3.Services.
 C:\myproject\WebApplication3.Services\obj\Debug\net8.0\refint\WebApplication3.Services.dll
 C:\myproject\WebApplication3.Services\obj\Debug\net8.0\WebApplication3.Services.pdb
 C:\myproject\WebApplication3.Services\obj\Debug\net8.0\ref\WebApplication3.Services.dll
+C:\myproject\WebApplication3.Services\bin\Debug\net8.0\WebApplication3.DAL.dll
+C:\myproject\WebApplication3.Services\bin\Debug\net8.0\WebApplicatoin3.Domain.dll
+C:\myproject\WebApplication3.Services\bin\Debug\net8.0\WebApplication3.DAL.pdb
+C:\myproject\WebApplication3.Services\bin\Debug\net8.0\WebApplicatoin3.Domain.pdb
+C:\myproject\WebApplication3.Services\obj\Debug\net8.0\WebAppli.CAC5560B.Up2Date

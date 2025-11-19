@@ -9,7 +9,7 @@ using System.Data;
 
 namespace WebApplicatoin3.Domain.ModelsDb
 {
-    [Table("user")]
+    [Table("users")]
     public class UserDb
     {
         [Column("id")]

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WebApplicatoin3.Domain.Enum
 {
-    public class Enum
+    public class Enums
     {
 
     }

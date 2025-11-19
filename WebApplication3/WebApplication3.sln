@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{89A5F7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicatoin3.Domain", "..\WebApplicatoin3.Domain\WebApplicatoin3.Domain.csproj", "{BA467F35-E01C-4194-95B5-ECC55DD731E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{FF91537C-B4A4-406E-9B25-BD5C383EDD80}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{FF91537C-B4A4-406E-9B25-BD5C383EDD80}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication3.Services", "..\WebApplication3.Services\WebApplication3.Services.csproj", "{BE3A32D5-534A-48A6-BF52-590C9F7AF899}"
 EndProject

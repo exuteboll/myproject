@@ -1,5 +1,11 @@
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebApplication3.DAL;
+using WebApplication3.DAL.Interfaces;
+using WebApplication3.DAL.Storage;
+using WebApplication3.Services.Interfaces;
+using WebApplication3.Services.Realizations;
+using WebApplicatoin3.Domain.ModelsDb;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,8 +13,27 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 string connection = builder.Configuration.GetConnectionString("DefaultConnection");
-
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql(connection));
+
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(options =>
+    {
+        options.LoginPath = "/Home/Index";
+        options.AccessDeniedPath = "/Home/Privacy";
+        options.ExpireTimeSpan = TimeSpan.FromHours(3);
+    });
+
+// Register services
+builder.Services.AddScoped<IBaseStorage<UserDb>, UserStorage>();
+builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+
+// Other storages
+builder.Services.AddScoped<ProductStorage>();
+builder.Services.AddScoped<CategoryStorage>();
+builder.Services.AddScoped<OrderStorage>();
+builder.Services.AddScoped<ProductImageStorage>();
 
 var app = builder.Build();
 
