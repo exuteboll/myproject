@@ -1,0 +1,77 @@
+﻿@model WebApplication3.Controllers.ProductIndexViewModel
+@{
+    ViewBag.HeaderImage = "/img/catalog.jpg";
+}
+
+<div class="container-section">
+    <h2 class="info-section">Каталог товаров</h2>
+
+    <!-- Фильтры и поиск -->
+    <div class="catalog-filters">
+        <div class="search-box">
+            <form method="get" action="@Url.Action("Catalog")">
+                <input type="text" name="search" value="@Model.SearchQuery" placeholder="Поиск товаров..." class="search-input" />
+                <button type="submit" class="search-button">Найти</button>
+            </form>
+        </div>
+
+        <div class="category-filters">
+            <a href="@Url.Action("Catalog", new { category = "all", search = Model.SearchQuery })"
+               class="category-filter @(string.IsNullOrEmpty(Model.SelectedCategory) || Model.SelectedCategory == "all" ? "active" : "")">
+                Все товары
+            </a>
+            @foreach (var category in Model.Categories)
+            {
+                <a href="@Url.Action("Catalog", new { category = category.Name, search = Model.SearchQuery })"
+                   class="category-filter @(Model.SelectedCategory == category.Name ? "active" : "")">
+                    @category.Name
+                </a>
+            }
+        </div>
+    </div>
+
+    <!-- Сетка товаров -->
+    <div class="products-grid">
+        @if (Model.Products.Any())
+        {
+            foreach (var product in Model.Products)
+            {
+                <div class="product-card">
+                    <div class="product-image">
+                        @if (!string.IsNullOrEmpty(product.ImageUrl))
+                        {
+                            <img src="@product.ImageUrl" alt="@product.Name" />
+                        }
+                        else
+                        {
+                            <div class="product-image-placeholder">Нет изображения</div>
+                        }
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">@product.Name</h3>
+                        <p class="product-description">@(product.Description.Length > 100 ? product.Description.Substring(0, 100) + "..." : product.Description)</p>
+                        <div class="product-price">
+                            @if (product.OldPrice.HasValue)
+                            {
+                                <span class="old-price">@product.OldPrice.Value.ToString("N2") руб.</span>
+                            }
+                            <span class="current-price">@product.Price.ToString("N2") руб.</span>
+                        </div>
+                        <div class="product-actions">
+                            <a href="@Url.Action("Details", new { id = product.Id })" class="button">Подробнее</a>
+                            <button class="button add-to-cart" data-product-id="@product.Id">В корзину</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="no-products">
+                <h3>Товары не найдены</h3>
+                <p>Попробуйте изменить параметры поиска или выбрать другую категорию</p>
+            </div>
+        }
+    </div>
+</div>
+

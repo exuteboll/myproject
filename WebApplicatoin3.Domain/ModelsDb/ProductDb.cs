@@ -40,10 +40,13 @@ namespace WebApplicatoin3.Domain.ModelsDb
         [Column("image_url")]
         public string ImageUrl { get; set; }
 
-        [Column("createdat")]
+        [Column("createdAt")]
         public DateTime CreatedAt { get; set; }
 
-        // Навигационное свойство
+        // Навигационные свойства
         public CategoryDb Category { get; set; }
+
+        // Добавляем коллекцию изображений
+        public List<ProductImageDb> ProductImages { get; set; } = new List<ProductImageDb>();
     }
 }

@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="~/css/shared.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/login_and_registration.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/media_style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/layout.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/profile.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cart.css" asp-append-version="true" /> 
+    <link rel="stylesheet" href="~/css/catalog.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/product-details.css" asp-append-version="true" />
 
 </head>
 <body>
@@ -20,15 +25,34 @@
                     <li><a href="@Url.Action("Index", "Home")">Главная</a></li>
                     <li><a href="@Url.Action("Contacts", "Home")">Контакты</a></li>
                     <li><a href="@Url.Action("SiteInformation", "Home")">Услуги</a></li>
+                    <li><a href="@Url.Action("Catalog", "Product")">Каталог товаров</a></li>
+                     @if (User.Identity.IsAuthenticated)
+                    {
+                        <li><a href="@Url.Action("Profile", "Account")">Личный кабинет</a></li>
+                        <li><a href="@Url.Action("Index", "Cart")">Корзина</a></li>
+                    }
                 </ul>
             </div>
         </div>
         <div class="button-header">
-            <button class="button" id="click-to-hide">Войти</button> <!-- Добавлен id -->
+            @if (User.Identity.IsAuthenticated)
+            {
+                <span class="auth-user-info" style="margin-right: 15px; color: #370b0b;">
+                    Привет, @User.Identity.Name!
+                </span>
+                <span class="cart-counter-container" style="margin-right: 15px;">
+                    🛒 <span class="cart-counter">0</span>
+                </span>
+                <button class="button" id="logout-btn">Выйти</button>
+            }
+            else
+            {
+                <button class="button" id="click-to-hide">Войти</button>
+            }
         </div>
         @await Html.PartialAsync("_LoginRegistrationPartial")
         <div id="hamburger" class="icon">&#9776;</div>
-   </div>
+    </div>
     <img class="img-header" src="@ViewBag.HeaderImage" />
 
 
@@ -40,17 +64,31 @@
                <li><a href="@Url.Action("Index","Home")">Главная</a></li>
                <li><a href="@Url.Action("Contacts", "Home")">Контакты</a></li>
                <li><a href="@Url.Action("SiteInformation", "Home")">Услуги</a></li>
+                <li><a href="@Url.Action("Catalog", "Product")">Каталог товаров</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a href="@Url.Action("Profile", "Account")">Личный кабинет</a></li>
+                    <li><a href="@Url.Action("Index", "Cart")">Корзина</a></li>
+                    <li><a href="#" id="side-menu-logout-btn">Выйти</a></li>
+                }
             </ul>
-         
         </div>
-        <button class="button" id="side-menu-button-click-to-hide" type="button">Войти</button>
-     </div>
+        @if (!User.Identity.IsAuthenticated)
+        {
+            <button class="button" id="side-menu-button-click-to-hide" type="button">Войти</button>
+        }
+    </div>
     
     <div class="container">
         @RenderBody()
     </div>
 	<script src="~/js/shared_script.js" asp-append-version="true"></script>
     <script src="~/js/login_and_registration_script.js" asp-append-version="true"></script>
+    <script src="~/js/auth.js" asp-append-version="true"></script>
+    <script src="~/js/catalog.js" asp-append-version="true"></script>
+    <script src="~/js/product-details.js" asp-append-version="true"></script>
+    <script src="~/js/cart.js" asp-append-version="true"></script>
+    
 
     <footer>
         <div class="footer-left">

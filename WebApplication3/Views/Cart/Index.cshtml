@@ -1,0 +1,81 @@
+﻿@model List<WebApplicatoin3.Domain.ModelsDb.CartItemDb>
+@{
+    ViewBag.HeaderImage = "/img/cart.jpg";
+}
+
+<div class="container-section">
+    <h2 class="info-section">Корзина товаров</h2>
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="error-message">
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="cart-container">
+        @if (Model != null && Model.Any())
+        {
+            <div class="cart-items">
+                @foreach (var cartItem in Model)
+                {
+                    <div class="cart-item" data-product-id="@cartItem.ProductId">
+                        <div class="cart-item-image">
+                            @if (!string.IsNullOrEmpty(cartItem.Product?.ImageUrl))
+                            {
+                                <img src="@cartItem.Product.ImageUrl" alt="@cartItem.Product.Name" />
+                            }
+                            else
+                            {
+                                <div class="image-placeholder">Нет изображения</div>
+                            }
+                        </div>
+
+                        <div class="cart-item-info">
+                            <h3 class="cart-item-name">@cartItem.Product?.Name</h3>
+                            <p class="cart-item-category">@cartItem.Product?.Category?.Name</p>
+                            <p class="cart-item-price">@(cartItem.Product?.Price.ToString("N2") ?? "0") руб.</p>
+                        </div>
+
+                        <div class="cart-item-quantity">
+                            <button class="quantity-btn minus-btn" data-product-id="@cartItem.ProductId">-</button>
+                            <input type="number" class="quantity-input" value="@cartItem.Quantity" min="1" max="99" data-product-id="@cartItem.ProductId" />
+                            <button class="quantity-btn plus-btn" data-product-id="@cartItem.ProductId">+</button>
+                        </div>
+
+                        <div class="cart-item-total">
+                            <span class="total-price">@((cartItem.Quantity * (cartItem.Product?.Price ?? 0)).ToString("N2")) руб.</span>
+                        </div>
+
+                        <div class="cart-item-actions">
+                            <button class="button remove-btn" data-product-id="@cartItem.ProductId">Удалить</button>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Товаров:</span>
+                    <span>@Model.Sum(item => item.Quantity) шт.</span>
+                </div>
+                <div class="summary-row">
+                    <span>Общая сумма:</span>
+                    <span class="total-amount">@Model.Sum(item => item.Quantity * (item.Product?.Price ?? 0)).ToString("N2")) руб.</span>
+                </div>
+                <div class="cart-actions">
+                    <button class="button clear-cart-btn">Очистить корзину</button>
+                    <button class="button checkout-btn">Оформить заказ</button>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="empty-cart">
+                <h3>Ваша корзина пуста</h3>
+                <p>Добавьте товары из каталога, чтобы они появились здесь</p>
+                <a href="@Url.Action("Catalog", "Product")" class="button">Перейти к товарам</a>
+            </div>
+        }
+    </div>
+</div>

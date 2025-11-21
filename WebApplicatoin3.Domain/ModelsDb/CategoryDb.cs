@@ -19,10 +19,10 @@ namespace WebApplicatoin3.Domain.ModelsDb
         [Column("image_url")]
         public string ImageUrl { get; set; }
 
-        [Column("products_count")]
+         [Column("product_count")]  // Обратите внимание - product_count, а не products_count
         public int ProductsCount { get; set; }
 
-        [Column("createdat")]
+        [Column("cratedAt")]  // Исправлено на cratedAt (с опечаткой)
         public DateTime CreatedAt { get; set; }
     }
 }

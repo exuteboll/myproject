@@ -49,7 +49,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categories");
+                    b.ToTable("categories", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.OrderDb", b =>
@@ -94,7 +94,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("orders");
+                    b.ToTable("orders", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.ProductDb", b =>
@@ -154,7 +154,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("products");
+                    b.ToTable("products", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.ProductImageDb", b =>
@@ -181,7 +181,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("product_images");
+                    b.ToTable("product_images", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.RequestDb", b =>
@@ -217,7 +217,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("requests");
+                    b.ToTable("requests", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.UserDb", b =>
@@ -257,7 +257,7 @@ namespace WebApplication3.DAL.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("user");
+                    b.ToTable("user", (string)null);
                 });
 
             modelBuilder.Entity("WebApplicatoin3.Domain.ModelsDb.OrderDb", b =>

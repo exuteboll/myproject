@@ -14,13 +14,13 @@ namespace WebApplication3.DAL.Storage
 
         public override IQueryable<OrderDb> GetAll()
         {
-            return _db.orderDb
+            return _db.OrderDb
                 .Include(o => o.User); // Работает без OrderItems
         }
 
         public override async Task<OrderDb> Get(Guid id)
         {
-            return await _db.orderDb
+            return await _db.OrderDb
                 .Include(o => o.User) // Работает без OrderItems
                 .FirstOrDefaultAsync(o => o.Id == id);
         }
@@ -28,7 +28,7 @@ namespace WebApplication3.DAL.Storage
         // Дополнительные методы
         public async Task<List<OrderDb>> GetByUserId(Guid userId)
         {
-            return await _db.orderDb
+            return await _db.OrderDb
                 .Where(o => o.UserId == userId)
                 .Include(o => o.User)
                 .ToListAsync();

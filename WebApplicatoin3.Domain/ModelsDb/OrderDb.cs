@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations.Schema;
+using WebApplicatoin3.Domain.Enum;
 
 namespace WebApplicatoin3.Domain.ModelsDb
 {
@@ -37,5 +38,6 @@ namespace WebApplicatoin3.Domain.ModelsDb
         // Навигационные свойства
         public UserDb User { get; set; }
         public ProductDb Product { get; set; }
+        public List<OrderItemDb> OrderItems { get; set; } = new List<OrderItemDb>();
     }
 }

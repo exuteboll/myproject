@@ -1,0 +1,56 @@
+﻿@model WebApplicatoin3.Domain.ModelsDb.UserDb
+@{
+    ViewBag.HeaderImage = "/img/profile.jpg";
+}
+
+<div class="container-section">
+    <h2 class="info-section">Личный кабинет</h2>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            @if (!string.IsNullOrEmpty(Model.pathImage))
+            {
+                <img src="@Model.pathImage" alt="Аватар" class="profile-avatar" />
+            }
+            else
+            {
+                <div class="profile-avatar-placeholder">
+                    <span>@Model.Login[0]</span>
+                </div>
+            }
+            <div class="profile-info">
+                <h3>@Model.Login</h3>
+                <p>@Model.Email</p>
+                <p>Роль: @Model.Role</p>
+            </div>
+        </div>
+
+        <div class="profile-grid">
+            <div class="profile-card">
+                <h4>Информация о профиле</h4>
+                <p><strong>Логин:</strong> @Model.Login</p>
+                <p><strong>Email:</strong> @Model.Email</p>
+                <p><strong>Роль:</strong> @Model.Role</p>
+                <p><strong>Дата регистрации:</strong> @Model.CreatedAt.ToString("dd.MM.yyyy")</p>
+            </div>
+
+            <div class="profile-card">
+                <h4>Быстрые действия</h4>
+                <div class="profile-actions">
+                    <button class="button" onclick="alert('Функция в разработке')">История заказов</button>
+                    <button class="button" onclick="alert('Функция в разработке')">Изменить профиль</button>
+                    <button class="button" onclick="alert('Функция в разработке')">Сменить пароль</button>
+                </div>
+            </div>
+        </div>
+
+        @if (Model.Role == WebApplicatoin3.Domain.Enum.Role.Admin || Model.Role == WebApplicatoin3.Domain.Enum.Role.Manager)
+        {
+            <div class="admin-panel">
+                <h4>Панель управления</h4>
+                <button class="button admin-button" onclick="alert('Админ панель в разработке')">Управление товарами</button>
+                <button class="button admin-button" onclick="alert('Админ панель в разработке')">Управление заказами</button>
+            </div>
+        }
+    </div>
+</div>

@@ -1,5 +1,10 @@
+wwwroot\css\cart.css
+wwwroot\css\catalog.css
+wwwroot\css\layout.css
 wwwroot\css\login_and_registration.css
 wwwroot\css\media_style.css
+wwwroot\css\product-details.css
+wwwroot\css\profile.css
 wwwroot\css\shared.css
 wwwroot\favicon.ico
 wwwroot\img\1.jfif
@@ -17,7 +22,11 @@ wwwroot\img\office.jfif
 wwwroot\img\sofa.jfif
 wwwroot\img\table.jfif
 wwwroot\img\wardrobe.jfif
+wwwroot\js\auth.js
+wwwroot\js\cart.js
+wwwroot\js\catalog.js
 wwwroot\js\login_and_registration_script.js
+wwwroot\js\product-details.js
 wwwroot\js\shared_script.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

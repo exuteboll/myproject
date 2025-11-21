@@ -6,32 +6,32 @@
     <div class="card-container">
         <div class="arrow left">&#10094;</div>
         <div class="card-wrapper">
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Мягкая мебель" })'" style="cursor: pointer;">
                 <img src="~/img/sofa.jfif" alt="Диваны">
                 <h3>Мягкая мебель</h3>
                 <p>Диваны, кресла и пуфы — комфорт и элегантность для вашей гостиной. Ортопедические основы и качественные ткани.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Столы и стулья" })'" style="cursor: pointer;">
                 <img src="~/img/table.jfif" alt="Столы и стулья">
                 <h3>Столы и стулья</h3>
                 <p>Классические и современные решения для кухни, гостиной или офиса. Натуральное дерево и металлические конструкции.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Шкафы и гардеробы" })'" style="cursor: pointer;">
                 <img src="~/img/wardrobe.jfif" alt="Шкафы">
                 <h3>Шкафы и гардеробы</h3>
                 <p>Функциональные системы хранения с раздвижными дверями и зеркалами. Индивидуальное проектирование.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Кровати" })'" style="cursor: pointer;">
                 <img src="~/img/bed.jfif" alt="Кровати">
                 <h3>Кровати</h3>
                 <p>Уютные и прочные кровати с ортопедическим основанием и мягким изголовьем. Различные размеры и стили.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Кухонная мебель" })'" style="cursor: pointer;">
                 <img src="~/img/kitchen.jfif" alt="Кухни">
                 <h3>Кухонная мебель</h3>
                 <p>Индивидуальные кухни под заказ — эргономика и стиль в каждом сантиметре. Встраиваемая техника.</p>
             </div>
-            <div class="card">
+            <div class="card" onclick="location.href='@Url.Action("Catalog", "Product", new { category = "Офисная мебель" })'" style="cursor: pointer;">
                 <img src="~/img/office.jfif" alt="Офисная мебель">
                 <h3>Офисная мебель</h3>
                 <p>Рабочие столы, кресла и шкафы для продуктивной атмосферы на работе. Эргономичные решения.</p>
@@ -40,5 +40,3 @@
         <div class="arrow right">&#10095;</div>
     </div>
 </div>
-
-

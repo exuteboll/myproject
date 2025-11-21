@@ -1,0 +1,85 @@
+﻿@model WebApplicatoin3.Domain.ModelsDb.ProductDb
+@{
+    ViewBag.HeaderImage = "/img/product-details.jpg";
+}
+
+<div class="container-section">
+    <div class="product-details">
+        <div class="product-gallery">
+            <div class="main-image">
+                @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                {
+                    <img src="@Model.ImageUrl" alt="@Model.Name" id="main-product-image" />
+                }
+                else
+                {
+                    <div class="image-placeholder">Нет изображения</div>
+                }
+            </div>
+            @if (Model.ProductImages != null && Model.ProductImages.Any())
+            {
+                <div class="image-thumbnails">
+                    @foreach (var image in Model.ProductImages.Take(4))
+                    {
+                        <img src="@image.ImageUrl" alt="@Model.Name" class="thumbnail" data-image="@image.ImageUrl" />
+                    }
+                </div>
+            }
+        </div>
+
+        <div class="product-info">
+            <h1 class="product-title">@Model.Name</h1>
+            <div class="product-category">Категория: @Model.Category?.Name</div>
+
+            <div class="product-price">
+                @if (Model.OldPrice.HasValue)
+                {
+                    <div class="old-price">@Model.OldPrice.Value.ToString("N2") руб.</div>
+                }
+                <div class="current-price">@Model.Price.ToString("N2") руб.</div>
+            </div>
+
+            <div class="product-description">
+                <h3>Описание</h3>
+                <p>@Model.Description</p>
+            </div>
+
+            <div class="product-specs">
+                <h3>Характеристики</h3>
+                <div class="specs-grid">
+                    @if (!string.IsNullOrEmpty(Model.Material))
+                    {
+                        <div class="spec-item">
+                            <span class="spec-name">Материал:</span>
+                            <span class="spec-value">@Model.Material</span>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Dimensions))
+                    {
+                        <div class="spec-item">
+                            <span class="spec-name">Размеры:</span>
+                            <span class="spec-value">@Model.Dimensions</span>
+                        </div>
+                    }
+                    @if (!string.IsNullOrEmpty(Model.Color))
+                    {
+                        <div class="spec-item">
+                            <span class="spec-name">Цвет:</span>
+                            <span class="spec-value">@Model.Color</span>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="product-actions">
+                <div class="quantity-selector">
+                    <label for="quantity">Количество:</label>
+                    <input type="number" id="quantity" min="1" value="1" class="quantity-input" />
+                </div>
+                <button class="button add-to-cart-large" data-product-id="@Model.Id">Добавить в корзину</button>
+                <a href="@Url.Action("Catalog", "Product")" class="button back-to-catalog">Назад к каталогу</a>
+            </div>
+        </div>
+    </div>
+</div>
+

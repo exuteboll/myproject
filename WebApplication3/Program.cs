@@ -28,12 +28,17 @@ builder.Services.AddScoped<IBaseStorage<UserDb>, UserStorage>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IProductStorage, ProductStorage>();
+builder.Services.AddScoped<ICategoryStorage, CategoryStorage>();
+builder.Services.AddScoped<ICartStorage, CartStorage>();
+builder.Services.AddScoped<ICartService, CartService>();
 
 // Other storages
 builder.Services.AddScoped<ProductStorage>();
 builder.Services.AddScoped<CategoryStorage>();
 builder.Services.AddScoped<OrderStorage>();
 builder.Services.AddScoped<ProductImageStorage>();
+
 
 var app = builder.Build();
 
@@ -51,5 +56,12 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+if (app.Environment.IsDevelopment())
+{
+    app.MapControllerRoute(
+        name: "seed",
+        pattern: "seed",
+        defaults: new { controller = "Seed", action = "Index" });
+}
 
 app.Run();
