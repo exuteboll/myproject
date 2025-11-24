@@ -1,4 +1,4 @@
-﻿@model WebApplicatoin3.Domain.ModelsDb.UserDb
+﻿@model WebApplicatoin3.Domain.ViewModels.Profile.ProfileViewModel
 @{
     ViewBag.HeaderImage = "/img/profile.jpg";
 }
@@ -8,46 +8,67 @@
 
     <div class="profile-container">
         <div class="profile-header">
-            @if (!string.IsNullOrEmpty(Model.pathImage))
+            @if (!string.IsNullOrEmpty(Model.User.pathImage))
             {
-                <img src="@Model.pathImage" alt="Аватар" class="profile-avatar" />
+                <img src="@Model.User.pathImage" alt="Аватар" class="profile-avatar" />
             }
             else
             {
                 <div class="profile-avatar-placeholder">
-                    <span>@Model.Login[0]</span>
+                    <span>@Model.User.Login[0]</span>
                 </div>
             }
             <div class="profile-info">
-                <h3>@Model.Login</h3>
-                <p>@Model.Email</p>
-                <p>Роль: @Model.Role</p>
+                <h3>@Model.User.Login</h3>
+                <p>@Model.User.Email</p>
+                <p>Роль: @Model.User.Role</p>
+                <p>Зарегистрирован: @Model.User.CreatedAt.ToString("dd.MM.yyyy")</p>
             </div>
         </div>
+
+        @if (TempData["Success"] != null)
+        {
+            <div class="alert alert-success">
+                @TempData["Success"]
+            </div>
+        }
+
+        @if (TempData["Error"] != null)
+        {
+            <div class="alert alert-danger">
+                @TempData["Error"]
+            </div>
+        }
 
         <div class="profile-grid">
             <div class="profile-card">
                 <h4>Информация о профиле</h4>
-                <p><strong>Логин:</strong> @Model.Login</p>
-                <p><strong>Email:</strong> @Model.Email</p>
-                <p><strong>Роль:</strong> @Model.Role</p>
-                <p><strong>Дата регистрации:</strong> @Model.CreatedAt.ToString("dd.MM.yyyy")</p>
+                <p><strong>Логин:</strong> @Model.User.Login</p>
+                <p><strong>Email:</strong> @Model.User.Email</p>
+                <p><strong>Роль:</strong> @Model.User.Role</p>
+                <p><strong>Дата регистрации:</strong> @Model.User.CreatedAt.ToString("dd.MM.yyyy")</p>
+                @if (!string.IsNullOrEmpty(Model.User.pathImage))
+                {
+                    <p><strong>Аватарка:</strong> Загружена</p>
+                }
             </div>
 
             <div class="profile-card">
-                <h4>Быстрые действия</h4>
+                <h4>Управление профилем</h4>
                 <div class="profile-actions">
-                    <button class="button" onclick="alert('Функция в разработке')">История заказов</button>
-                    <button class="button" onclick="alert('Функция в разработке')">Изменить профиль</button>
-                    <button class="button" onclick="alert('Функция в разработке')">Сменить пароль</button>
+                    <a href="@Url.Action("EditProfile")" class="button">Изменить профиль</a>
+                    <a href="@Url.Action("ChangePassword")" class="button">Сменить пароль</a>
+                    <a href="@Url.Action("Catalog", "Product")" class="button">Перейти в каталог</a>
+                    <a href="@Url.Action("Index", "Cart")" class="button">Корзина товаров</a>
                 </div>
             </div>
         </div>
 
-        @if (Model.Role == WebApplicatoin3.Domain.Enum.Role.Admin || Model.Role == WebApplicatoin3.Domain.Enum.Role.Manager)
+        @if (Model.User.Role == WebApplicatoin3.Domain.Enum.Role.Admin || Model.User.Role == WebApplicatoin3.Domain.Enum.Role.Manager)
         {
             <div class="admin-panel">
                 <h4>Панель управления</h4>
+                <p>Доступны функции администратора/менеджера</p>
                 <button class="button admin-button" onclick="alert('Админ панель в разработке')">Управление товарами</button>
                 <button class="button admin-button" onclick="alert('Админ панель в разработке')">Управление заказами</button>
             </div>

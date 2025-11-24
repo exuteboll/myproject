@@ -4,6 +4,7 @@
     "\\Controllers",
     "\\Models",
     "\\Views",
+    "\\Views\\Cart",
     "\\Views\\Home",
     "\\Views\\Shared",
     "\\wwwroot",

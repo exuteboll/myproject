@@ -71,12 +71,15 @@ namespace WebApplication3.DAL
                 .HasForeignKey(r => r.UserId);
 
             // Конвертация DateTime для PostgreSQL
+            // ИСПРАВЛЕННАЯ конвертация DateTime для PostgreSQL
             foreach (var entityType in modelBuilder.Model.GetEntityTypes())
             {
                 foreach (var property in entityType.GetProperties())
                 {
                     if (property.ClrType == typeof(DateTime))
                     {
+                        property.SetColumnType("timestamp with time zone");
+                        // ИЛИ используйте конвертер для приведения к локальному времени
                         property.SetValueConverter(
                             new Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<DateTime, DateTime>(
                                 v => v.ToUniversalTime(),
@@ -84,6 +87,7 @@ namespace WebApplication3.DAL
                     }
                     else if (property.ClrType == typeof(DateTime?))
                     {
+                        property.SetColumnType("timestamp with time zone");
                         property.SetValueConverter(
                             new Microsoft.EntityFrameworkCore.Storage.ValueConversion.ValueConverter<DateTime?, DateTime?>(
                                 v => v.HasValue ? v.Value.ToUniversalTime() : v,

@@ -122,7 +122,25 @@ namespace WebApplication3.Services.Realizations
         {
             try
             {
-                await _userStorage.Update(user);
+                // Получаем пользователя из базы с отслеживанием
+                var existingUser = await _userStorage.Get(user.Id);
+                if (existingUser == null)
+                {
+                    return new BaseResponse<bool>
+                    {
+                        Description = "Пользователь не найден",
+                        StatusCode = StatusCode.NotFound
+                    };
+                }
+
+                // Обновляем только необходимые поля
+                existingUser.Login = user.Login;
+                existingUser.Email = user.Email;
+                existingUser.Password = user.Password; // если меняется пароль
+                existingUser.pathImage = user.pathImage; // если меняется аватар
+                                                         // НЕ обновляем CreatedAt и другие системные поля
+
+                await _userStorage.Update(existingUser);
                 return new BaseResponse<bool>
                 {
                     Description = "Профиль успешно обновлен",
@@ -132,9 +150,10 @@ namespace WebApplication3.Services.Realizations
             }
             catch (Exception ex)
             {
+                var innerException = ex.InnerException != null ? $"\nВнутренняя ошибка: {ex.InnerException.Message}" : "";
                 return new BaseResponse<bool>
                 {
-                    Description = $"Ошибка при обновлении профиля: {ex.Message}",
+                    Description = $"Ошибка при обновлении профиля: {ex.Message}{innerException}",
                     StatusCode = StatusCode.InternalServerError
                 };
             }

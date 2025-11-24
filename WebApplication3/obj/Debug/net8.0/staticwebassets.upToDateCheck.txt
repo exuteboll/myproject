@@ -1,3 +1,4 @@
+wwwroot\css\account-forms.css
 wwwroot\css\cart.css
 wwwroot\css\catalog.css
 wwwroot\css\layout.css

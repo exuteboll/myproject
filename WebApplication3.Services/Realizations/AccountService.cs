@@ -60,8 +60,8 @@ namespace WebApplication3.Services.Realizations
                     Email = model.Email,
                     Password = BCrypt.Net.BCrypt.HashPassword(model.Password),
                     Role = Role.User,
-                    pathImage = string.Empty, // Добавляем обязательное поле
-                    CreatedAt = DateTime.Now // Используем DateTime.Now вместо UtcNow для соответствия БД
+                    pathImage = string.Empty,
+                    CreatedAt = DateTime.Now // ИЗМЕНЕНО: DateTime.Now вместо UtcNow
                 };
 
                 var createResult = await _userService.CreateUser(user);

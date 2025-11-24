@@ -32,6 +32,7 @@ builder.Services.AddScoped<IProductStorage, ProductStorage>();
 builder.Services.AddScoped<ICategoryStorage, CategoryStorage>();
 builder.Services.AddScoped<ICartStorage, CartStorage>();
 builder.Services.AddScoped<ICartService, CartService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 
 // Other storages
 builder.Services.AddScoped<ProductStorage>();
