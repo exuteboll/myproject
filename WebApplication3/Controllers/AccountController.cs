@@ -17,17 +17,14 @@ namespace WebApplication3.Controllers
         private readonly IUserService _userService;
         private readonly IOrderService _orderService;
         private readonly IAccountService _accountService;
-        private readonly IWebHostEnvironment _environment;
 
         public AccountController(IUserService userService,
                                IOrderService orderService,
-                               IAccountService accountService,
-                               IWebHostEnvironment environment)
+                               IAccountService accountService)
         {
             _userService = userService;
             _orderService = orderService;
             _accountService = accountService;
-            _environment = environment;
         }
 
         public async Task<IActionResult> Profile()
@@ -79,15 +76,7 @@ namespace WebApplication3.Controllers
             }
 
             var userId = Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
-
-            // Обрабатываем загрузку аватарки
-            string avatarPath = null;
-            if (model.Avatar != null && model.Avatar.Length > 0)
-            {
-                avatarPath = await SaveAvatarAsync(model.Avatar, userId);
-            }
-
-            var result = await _orderService.UpdateUserProfile(userId, model.Login, model.Email, avatarPath);
+            var result = await _orderService.UpdateUserProfile(userId, model.Login, model.Email);
 
             if (result.StatusCode == DomainStatusCode.OK)
             {
@@ -101,71 +90,6 @@ namespace WebApplication3.Controllers
             TempData["Error"] = result.Description;
             return View(model);
         }
-        private async Task<string> SaveAvatarAsync(IFormFile avatarFile, Guid userId)
-        {
-            try
-            {
-                // Проверяем тип файла
-                var allowedExtensions = new[] { ".jpg", ".jpeg", ".png", ".gif" };
-                var extension = Path.GetExtension(avatarFile.FileName).ToLowerInvariant();
-
-                if (string.IsNullOrEmpty(extension) || !allowedExtensions.Contains(extension))
-                {
-                    throw new Exception("Допустимые форматы: JPG, JPEG, PNG, GIF");
-                }
-
-                // Проверяем размер файла (макс. 5MB)
-                if (avatarFile.Length > 5 * 1024 * 1024)
-                {
-                    throw new Exception("Размер файла не должен превышать 5MB");
-                }
-
-                // Создаем папку для аватарок, если её нет
-                var avatarsFolder = Path.Combine(_environment.WebRootPath, "avatars");
-                if (!Directory.Exists(avatarsFolder))
-                {
-                    Directory.CreateDirectory(avatarsFolder);
-                }
-
-                // Генерируем уникальное имя файла
-                var fileName = $"{userId}_{DateTime.Now:yyyyMMddHHmmss}{extension}";
-                var filePath = Path.Combine(avatarsFolder, fileName);
-
-                // Сохраняем файл
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    await avatarFile.CopyToAsync(stream);
-                }
-
-                // Возвращаем относительный путь
-                return $"/avatars/{fileName}";
-            }
-            catch (Exception ex)
-            {
-                throw new Exception($"Ошибка при сохранении аватарки: {ex.Message}");
-            }
-        }
-
-        private void DeleteOldAvatar(string oldAvatarPath)
-        {
-            if (!string.IsNullOrEmpty(oldAvatarPath) && oldAvatarPath.StartsWith("/avatars/"))
-            {
-                try
-                {
-                    var oldFilePath = Path.Combine(_environment.WebRootPath, oldAvatarPath.TrimStart('/'));
-                    if (System.IO.File.Exists(oldFilePath))
-                    {
-                        System.IO.File.Delete(oldFilePath);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    // Логируем ошибку, но не прерываем выполнение
-                    Console.WriteLine($"Ошибка при удалении старой аватарки: {ex.Message}");
-                }
-            }
-        }
-
 
         [HttpGet]
         public IActionResult ChangePassword()

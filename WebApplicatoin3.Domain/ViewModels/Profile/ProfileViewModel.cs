@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebApplicatoin3.Domain.ModelsDb;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Http;
 
 namespace WebApplicatoin3.Domain.ViewModels.Profile
 {
@@ -25,10 +23,6 @@ namespace WebApplicatoin3.Domain.ViewModels.Profile
         [Required(ErrorMessage = "Email обязателен")]
         [EmailAddress(ErrorMessage = "Некорректный формат email")]
         public string Email { get; set; }
-
-        // Новое поле для аватарки
-        [Display(Name = "Аватарка")]
-        public IFormFile Avatar { get; set; }
     }
 
     public class ChangePasswordViewModel

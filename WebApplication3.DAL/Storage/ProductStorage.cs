@@ -30,7 +30,10 @@ namespace WebApplication3.DAL.Storage
 
         public async Task<List<ProductDb>> GetByCategoryId(Guid categoryId)
         {
-            return new List<ProductDb>();
+            return await _db.ProductDb
+      .Where(p => p.CategoryId == categoryId)
+      .Include(p => p.Category)
+      .ToListAsync();
         }
 
         public async Task<List<ProductDb>> SearchProducts(string searchTerm)

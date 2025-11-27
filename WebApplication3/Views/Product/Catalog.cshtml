@@ -49,7 +49,17 @@
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">@product.Name</h3>
-                        <p class="product-description">@(product.Description.Length > 100 ? product.Description.Substring(0, 100) + "..." : product.Description)</p>
+                        <p class="product-description">
+                            @if (!string.IsNullOrEmpty(product.Description))
+                            {
+                                @(product.Description.Length > 100 ? product.Description.Substring(0, 100) + "..." : product.Description)
+                            }
+                            else
+                            {
+                                <em>Описание отсутствует</em>
+                            }
+                        </p>
+
                         <div class="product-price">
                             @if (product.OldPrice.HasValue)
                             {

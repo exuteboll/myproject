@@ -20,7 +20,7 @@ namespace WebApplicatoin3.Domain.ModelsDb
         public string Name { get; set; }
 
         [Column("description")]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         [Column("price")]
         public decimal Price { get; set; }
@@ -29,16 +29,16 @@ namespace WebApplicatoin3.Domain.ModelsDb
         public decimal? OldPrice { get; set; }
 
         [Column("material")]
-        public string Material { get; set; }
+        public string? Material { get; set; }
 
         [Column("dimensions")]
-        public string Dimensions { get; set; }
+        public string? Dimensions { get; set; }
 
         [Column("color")]
-        public string Color { get; set; }
+        public string? Color { get; set; }
 
         [Column("image_url")]
-        public string ImageUrl { get; set; }
+        public string? ImageUrl { get; set; }
 
         [Column("createdAt")]
         public DateTime CreatedAt { get; set; }

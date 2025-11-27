@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+﻿using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
 using WebApplication3.DAL;
 using WebApplication3.DAL.Interfaces;
@@ -25,20 +25,35 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 
 // Register services
 builder.Services.AddScoped<IBaseStorage<UserDb>, UserStorage>();
+builder.Services.AddScoped<IBaseStorage<ProductDb>, ProductStorage>();
+builder.Services.AddScoped<IBaseStorage<CategoryDb>, CategoryStorage>();
+builder.Services.AddScoped<IBaseStorage<OrderDb>, OrderStorage>();
+builder.Services.AddScoped<IBaseStorage<CartItemDb>, CartStorage>();
+builder.Services.AddScoped<IBaseStorage<RequestDb>, BaseStorage<RequestDb>>();
+builder.Services.AddScoped<IBaseStorage<ProductImageDb>, BaseStorage<ProductImageDb>>();
+builder.Services.AddScoped<IBaseStorage<OrderItemDb>, BaseStorage<OrderItemDb>>();
+
+// Register specific storage interfaces
+builder.Services.AddScoped<ICartStorage, CartStorage>();
+builder.Services.AddScoped<IProductStorage, ProductStorage>();
+builder.Services.AddScoped<ICategoryStorage, CategoryStorage>();
+
+// Register services
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IAccountService, AccountService>();
-builder.Services.AddScoped<IProductStorage, ProductStorage>();
-builder.Services.AddScoped<ICategoryStorage, CategoryStorage>();
-builder.Services.AddScoped<ICartStorage, CartStorage>();
 builder.Services.AddScoped<ICartService, CartService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IAdminService, AdminService>(); // ← ДОБАВЬТЕ ЭТУ СТРОКУ
 
-// Other storages
+
+// Other storages (если они используются напрямую)
+builder.Services.AddScoped<UserStorage>();
 builder.Services.AddScoped<ProductStorage>();
 builder.Services.AddScoped<CategoryStorage>();
 builder.Services.AddScoped<OrderStorage>();
 builder.Services.AddScoped<ProductImageStorage>();
+builder.Services.AddScoped<CartStorage>();
 
 
 var app = builder.Build();
@@ -47,11 +62,14 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
 }
+app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(

@@ -9,6 +9,6 @@ namespace WebApplication3.Services.Interfaces
 {
     public interface IOrderService
     {
-        Task<BaseResponse<bool>> UpdateUserProfile(Guid userId, string login, string email, string avatarPath = null);
+        Task<BaseResponse<bool>> UpdateUserProfile(Guid userId, string login, string email);
     }   
 }

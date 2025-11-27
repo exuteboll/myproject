@@ -1,0 +1,125 @@
+﻿@model WebApplicatoin3.Domain.Models.AdminDashboardViewModel
+@{
+    ViewData["Title"] = "Админ панель - Дашборд";
+}
+
+<link rel="stylesheet" href="~/css/admin.css" />
+
+<div class="admin-container">
+    <div class="admin-header">
+        <h1>Панель управления</h1>
+        <div class="admin-actions">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-primary">На сайт</a>
+        </div>
+    </div>
+
+    <nav class="admin-nav">
+        <ul class="admin-nav-menu">
+            <li class="admin-nav-item">
+                <a href="@Url.Action("Dashboard")" class="admin-nav-link active">Дашборд</a>
+            </li>
+            <li class="admin-nav-item">
+                <a href="@Url.Action("Users")" class="admin-nav-link">Пользователи</a>
+            </li>
+            <li class="admin-nav-item">
+                <a href="@Url.Action("Products")" class="admin-nav-link">Товары</a>
+            </li>
+            <li class="admin-nav-item">
+                <a href="@Url.Action("Orders")" class="admin-nav-link">Заказы</a>
+            </li>
+        </ul>
+    </nav>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-error">
+            @TempData["Error"]
+        </div>
+    }
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <h3>Пользователи</h3>
+            <div class="stat-number">@Model.TotalUsers</div>
+        </div>
+        <div class="stat-card">
+            <h3>Товары</h3>
+            <div class="stat-number">@Model.TotalProducts</div>
+        </div>
+        <div class="stat-card">
+            <h3>Заказы</h3>
+            <div class="stat-number">@Model.TotalOrders</div>
+        </div>
+        <div class="stat-card">
+            <h3>Категории</h3>
+            <div class="stat-number">@Model.TotalCategories</div>
+        </div>
+        <div class="stat-card">
+            <h3>Доход</h3>
+            <div class="stat-number">@Model.TotalRevenue.ToString("N2") руб.</div>
+        </div>
+    </div>
+
+    <div class="recent-section">
+        <div class="recent-card">
+            <h3>Последние пользователи</h3>
+            @if (Model.RecentUsers.Any())
+            {
+                @foreach (var user in Model.RecentUsers)
+                {
+                    <div class="recent-item">
+                        <div>
+                            <strong>@user.Login</strong>
+                            <br>
+                            <small>@user.Email</small>
+                        </div>
+                        <div class="role-badge role-@user.Role.ToString().ToLower()">
+                            @user.Role
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>Нет пользователей</p>
+                </div>
+            }
+        </div>
+
+        <div class="recent-card">
+            <h3>Последние заказы</h3>
+            @if (Model.RecentOrders.Any())
+            {
+                @foreach (var order in Model.RecentOrders)
+                {
+                    <div class="recent-item">
+                        <div>
+                            <strong>@order.ProductName</strong>
+                            <br>
+                            <small>@order.Quantity} шт.</small>
+                        </div>
+                        <div>
+                            <strong>@order.Price.ToString("N2") руб.</strong>
+                            <br>
+                            <small>@order.CreatedAt.ToString("dd.MM.yyyy")</small>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="empty-state">
+                    <p>Нет заказов</p>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="~/css/catalog.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/product-details.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/account-forms.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
 
 
 </head>
@@ -33,6 +34,10 @@
                         <li><a href="@Url.Action("Profile", "Account")">Личный кабинет</a></li>
                         <li><a href="@Url.Action("Index", "Cart")">Корзина</a></li>
                         
+                    }
+                    @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+                    {
+                        <li><a href="@Url.Action("Dashboard", "Admin")">Админ-панель</a></li>
                     }
                 </ul>
             </div>
@@ -72,6 +77,10 @@
                 {
                     <li><a href="@Url.Action("Profile", "Account")">Личный кабинет</a></li>
                     <li><a href="@Url.Action("Index", "Cart")">Корзина</a></li>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Manager"))
+                    {
+                        <li><a href="@Url.Action("Dashboard", "Admin")">Админ-панель</a></li>
+                    }
                     <li><a href="#" id="side-menu-logout-btn">Выйти</a></li>
                 }
             </ul>
@@ -91,6 +100,7 @@
     <script src="~/js/catalog.js" asp-append-version="true"></script>
     <script src="~/js/product-details.js" asp-append-version="true"></script>
     <script src="~/js/cart.js" asp-append-version="true"></script>
+    <sctipt src="~/js/admin.js" asp-appened-version="true"><</sctipt>
     
 
     <footer>
