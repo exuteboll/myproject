@@ -7,16 +7,6 @@
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\product\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\product\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE3A32D5-534A-48A6-BF52-590C9F7AF899}|..\\WebApplication3.Services\\WebApplication3.Services.csproj|c:\\myproject\\webapplication3.services\\realizations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA467F35-E01C-4194-95B5-ECC55DD731E8}|..\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj|c:\\myproject\\webapplicatoin3.domain\\modelsdb\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\myproject\\WebApplication3.DAL\\Migrations\\20251120221404_AddCartAndOrderTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,6 +32,9 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE3A32D5-534A-48A6-BF52-590C9F7AF899}|..\\WebApplication3.Services\\WebApplication3.Services.csproj|c:\\myproject\\webapplication3.services\\realizations\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE3A32D5-534A-48A6-BF52-590C9F7AF899}|..\\WebApplication3.Services\\WebApplication3.Services.csproj|c:\\myproject\\webapplication3.services\\interfaces\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -118,6 +111,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\product\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\views\\product\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|solutionrelative:views\\product\\catalog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DF877DC1-0DFC-4D90-AE69-53FB3E0CBDE3}|WebApplication3.csproj|c:\\myproject\\webapplication3\\wwwroot\\css\\product-details.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -254,6 +251,9 @@
       "AbsoluteMoniker": "D:0:0:{BA467F35-E01C-4194-95B5-ECC55DD731E8}|..\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj|c:\\myproject\\webapplicatoin3.domain\\modelsdb\\requestdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BA467F35-E01C-4194-95B5-ECC55DD731E8}|..\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj|c:\\myproject\\webapplicatoin3.domain\\modelsdb\\productdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA467F35-E01C-4194-95B5-ECC55DD731E8}|..\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj|c:\\myproject\\webapplicatoin3.domain\\modelsdb\\categorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -351,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Products.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Admin\\Products.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\Products.cshtml",
@@ -363,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Users.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Admin\\Users.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\Users.cshtml",
@@ -375,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "Views\\Admin\\Dashboard.cshtml",
@@ -387,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 5,
               "Title": "admin.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\admin.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\admin.js",
@@ -399,7 +399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 6,
               "Title": "admin.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\admin.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\admin.css",
@@ -411,7 +411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 7,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
@@ -423,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AdminService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\AdminService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\AdminService.cs",
@@ -431,12 +431,11 @@
               "RelativeToolTip": "..\\WebApplication3.Services\\Realizations\\AdminService.cs",
               "ViewState": "AgIAAJUBAAAAAAAAAAAgwJ4BAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-27T10:07:38.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-27T10:07:38.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "IAdminService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\IAdminService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\IAdminService.cs",
@@ -448,7 +447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "AdminModels.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\AdminModels.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\AdminModels.cs",
@@ -460,7 +459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "account-forms.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\account-forms.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\account-forms.css",
@@ -472,7 +471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "ChangePassword.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Account\\ChangePassword.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\ChangePassword.cshtml",
@@ -484,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "EditProfile.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Account\\EditProfile.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\EditProfile.cshtml",
@@ -496,7 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
               "Title": "ProfileViewModel.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ViewModels\\Profile\\ProfileViewModel.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ViewModels\\Profile\\ProfileViewModel.cs",
@@ -508,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 15,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\OrderService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\OrderService.cs",
@@ -520,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 16,
               "Title": "IOrderService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\IOrderService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\IOrderService.cs",
@@ -532,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 17,
               "Title": "UserProfile.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\UserProfile.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\UserProfile.cs",
@@ -544,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "20251120221404_AddCartAndOrderTables.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Migrations\\20251120221404_AddCartAndOrderTables.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Migrations\\20251120221404_AddCartAndOrderTables.cs",
@@ -556,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 18,
               "Title": "cart.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\cart.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\cart.js",
@@ -568,7 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Cart\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Cart\\Index.cshtml",
@@ -580,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 20,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\CartController.cs",
               "RelativeDocumentMoniker": "Controllers\\CartController.cs",
@@ -592,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 21,
               "Title": "CartService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\CartService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\CartService.cs",
@@ -604,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 22,
               "Title": "ICartService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\ICartService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\ICartService.cs",
@@ -616,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 23,
               "Title": "CartStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\CartStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\CartStorage.cs",
@@ -628,7 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 24,
               "Title": "ICartStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Interfaces\\ICartStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Interfaces\\ICartStorage.cs",
@@ -640,7 +639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 25,
               "Title": "OrderItemDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\OrderItemDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\OrderItemDb.cs",
@@ -652,7 +651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 26,
               "Title": "CartItemDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\CartItemDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\CartItemDb.cs",
@@ -664,7 +663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "SeedController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\SeedController.cs",
               "RelativeDocumentMoniker": "Controllers\\SeedController.cs",
@@ -676,7 +675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "product-details.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\product-details.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\product-details.js",
@@ -688,7 +687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "catalog.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\catalog.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\catalog.js",
@@ -700,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Product\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Details.cshtml",
@@ -712,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 31,
               "Title": "Catalog.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Product\\Catalog.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Catalog.cshtml",
@@ -720,12 +719,11 @@
               "RelativeToolTip": "Views\\Product\\Catalog.cshtml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-20T20:00:40.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-20T20:00:40.421Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "product-details.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\product-details.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\product-details.css",
@@ -737,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "catalog.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\catalog.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\catalog.css",
@@ -749,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "ICategoryStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Interfaces\\ICategoryStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Interfaces\\ICategoryStorage.cs",
@@ -761,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "IProductStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Interfaces\\IProductStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Interfaces\\IProductStorage.cs",
@@ -773,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
@@ -785,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "layout.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\layout.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\layout.css",
@@ -797,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "cart.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\cart.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\cart.css",
@@ -809,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "profile.css",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\css\\profile.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\profile.css",
@@ -834,7 +832,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "Profile.cshtml",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Views\\Account\\Profile.cshtml",
               "RelativeDocumentMoniker": "Views\\Account\\Profile.cshtml",
@@ -846,7 +844,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -858,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "auth.js",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\wwwroot\\js\\auth.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\auth.js",
@@ -870,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\AuthService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\AuthService.cs",
@@ -882,7 +880,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "UserService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\UserService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\UserService.cs",
@@ -894,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "AccountService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Realizations\\AccountService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Realizations\\AccountService.cs",
@@ -906,7 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "IUserService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\IUserService.cs",
@@ -918,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\IAuthService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\IAuthService.cs",
@@ -930,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "IAccountService.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\Interfaces\\IAccountService.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\Interfaces\\IAccountService.cs",
@@ -942,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "BaseResponse.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Response\\BaseResponse.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Response\\BaseResponse.cs",
@@ -954,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "Request.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\Request.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\Request.cs",
@@ -966,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\Order.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\Order.cs",
@@ -978,7 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "ProductImage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\ProductImage.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\ProductImage.cs",
@@ -990,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\Product.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\Product.cs",
@@ -1002,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\Category.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\Category.cs",
@@ -1014,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\Models\\User.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\Models\\User.cs",
@@ -1026,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "BaseStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\BaseStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\BaseStorage.cs",
@@ -1038,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "CategoryStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\CategoryStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\CategoryStorage.cs",
@@ -1050,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "OrderStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\OrderStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\OrderStorage.cs",
@@ -1062,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "ProductStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\ProductStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\ProductStorage.cs",
@@ -1074,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "ProductImageStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\ProductImageStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\ProductImageStorage.cs",
@@ -1086,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "UserStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Storage\\UserStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Storage\\UserStorage.cs",
@@ -1098,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "IBaseStorage.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Interfaces\\IBaseStorage.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Interfaces\\IBaseStorage.cs",
@@ -1110,7 +1108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "20251117150607_Init.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\Migrations\\20251117150607_Init.cs",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\Migrations\\20251117150607_Init.cs",
@@ -1122,7 +1120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "WebApplicatoin3.Domain",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\WebApplicatoin3.Domain.csproj",
@@ -1133,7 +1131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "WebApplication3.Services",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.Services\\WebApplication3.Services.csproj",
               "RelativeDocumentMoniker": "..\\WebApplication3.Services\\WebApplication3.Services.csproj",
@@ -1144,7 +1142,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "WebApplication3.DAL.csproj",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\WebApplication3.DAL.csproj",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\WebApplication3.DAL.csproj",
@@ -1156,7 +1154,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "WebApplication3.DAL",
               "DocumentMoniker": "C:\\myproject\\WebApplication3.DAL\\WebApplication3.DAL.csproj",
               "RelativeDocumentMoniker": "..\\WebApplication3.DAL\\WebApplication3.DAL.csproj",
@@ -1167,7 +1165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "WebApplication3.csproj",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\WebApplication3.csproj",
               "RelativeDocumentMoniker": "WebApplication3.csproj",
@@ -1179,7 +1177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "WebApplication3",
               "DocumentMoniker": "C:\\myproject\\WebApplication3\\WebApplication3.csproj",
               "RelativeDocumentMoniker": "WebApplication3.csproj",
@@ -1190,7 +1188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "ProductImageDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\ProductImageDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\ProductImageDb.cs",
@@ -1202,7 +1200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "OrderDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\OrderDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\OrderDb.cs",
@@ -1214,7 +1212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "RequestDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\RequestDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\RequestDb.cs",
@@ -1226,7 +1224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 73,
               "Title": "ProductDb.cs",
               "DocumentMoniker": "C:\\myproject\\WebApplicatoin3.Domain\\ModelsDb\\ProductDb.cs",
               "RelativeDocumentMoniker": "..\\WebApplicatoin3.Domain\\ModelsDb\\ProductDb.cs",
@@ -1234,8 +1232,7 @@
               "RelativeToolTip": "..\\WebApplicatoin3.Domain\\ModelsDb\\ProductDb.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowCUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T09:13:41.834Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T09:13:41.834Z"
             },
             {
               "$type": "Document",
